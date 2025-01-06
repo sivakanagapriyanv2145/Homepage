@@ -5,7 +5,7 @@ import axios from 'axios';
 const User = () => {
     const [user, setuser] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:3000/api/user/getdata")
+        axios.get("https://backenddemo-0792.onrender.com/api/user/getdata")
             .then((res) => {
                 console.log(res.data)
                 setuser(res.data)

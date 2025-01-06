@@ -9,7 +9,7 @@ const UpdateUser = () => {
     const [address,setaddress]=useState('');
     const update=(e)=>{
         e.preventDefault();
-        axios.put(`http://localhost:3000/api/user/update/${id}`,{name,email,address}).then((result)=>{console.log("updateed")})
+        axios.put(`https://backenddemo-0792.onrender.com/api/user/update/${id}`,{name,email,address}).then((result)=>{console.log("updateed")})
         .catch(err=>{console.log(err)});
     }
   return (

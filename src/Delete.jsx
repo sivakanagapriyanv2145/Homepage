@@ -8,7 +8,7 @@ const Delete = () => {
     const[id,setid]=useState('');
     const deledte=(e)=>{
         e.preventDefault();
-        axios.delete(`http://localhost:3000/api/user/deleteUser/${id}`).then(result=>{
+        axios.delete(`https://backenddemo-0792.onrender.com/api/user/deleteUser/${id}`).then(result=>{
             console.log("deleted");
             navigate('/');
 

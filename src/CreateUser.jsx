@@ -13,7 +13,7 @@ const CreateUser = () => {
 
    const submit=(e)=>{
     e.preventDefault();
-    axios.post('http://localhost:3000/api/user/fetch',{name,email,address}).then(result=>{
+    axios.post('https://backenddemo-0792.onrender.com/api/user/fetch',{name,email,address}).then(result=>{
         console.log(result.data);
         navigate('/');
     })
